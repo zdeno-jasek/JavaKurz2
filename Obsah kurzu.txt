@@ -1,0 +1,4 @@
+BigDecimal, LocalDate
+Dynamické polia - práca s List, ArrayList, Collection
+práca so súborom
+Thread
