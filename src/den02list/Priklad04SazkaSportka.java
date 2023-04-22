@@ -1,4 +1,4 @@
-package den05list;
+package den02list;
 
 import java.util.ArrayList;
 import java.util.List;

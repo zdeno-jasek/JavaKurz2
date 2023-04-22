@@ -1,4 +1,4 @@
-package den05BD;
+package den01bigdecimal;
 
 import java.math.BigDecimal;
 
