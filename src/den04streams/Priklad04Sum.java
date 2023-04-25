@@ -1,8 +1,5 @@
 package den04streams;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Optional;
 import java.util.OptionalInt;
 import java.util.stream.IntStream;
 
