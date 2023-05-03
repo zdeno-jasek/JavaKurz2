@@ -12,7 +12,7 @@ public class Priklad08BlackList {
 	 */
 	public static void main(String[] args) {
 		List<String> mena = new ArrayList<>();
-		mena.add( "Jozef" );
+		mena.add( "JozEf" );
 		mena.add("Peter");
 		mena.add( "Juraj" );
 		mena.add( "Gabriela" );
@@ -20,10 +20,22 @@ public class Priklad08BlackList {
 		mena.add( "Natasa" );
 		
 		List<String> blackList = new ArrayList<>();
-		blackList.add( "Jozef" );
-		blackList.add("Peter");
+		blackList.add( "JOZEf" );
+		blackList.add("PETER");
 		
-		mena.removeAll(blackList);
+		List<String> blackList2 = new ArrayList<>();
+		
+		
+		for (String blackName : blackList) {
+			String search = blackName.toUpperCase();	// JOZEF
+			for (String meno : mena ) {
+				if ( meno.toUpperCase().equals(search) ) { // JozEf => JOZEF == JOZEF?
+					blackList2.add(meno);
+				}
+			}
+		}
+		
+		mena.removeAll(blackList2);
 
 		System.out.println( mena );
 		

@@ -1,7 +1,7 @@
 package den02list;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 // ÚLOHA
 public class Priklad04SazkaSportkaRiesenie {
@@ -14,14 +14,10 @@ public class Priklad04SazkaSportkaRiesenie {
 	 * 	nahodneCeleCislo = (int) ( 1 + Math.random() * 49 );
 	 */
 	public static void main(String[] args) {
-		List<Integer> vygenerovaneCisla = new ArrayList<>();
+		Set<Integer> vygenerovaneCisla = new TreeSet<>();
 		
 		while ( vygenerovaneCisla.size() < 6 ) {
-			int nahodneCeleCislo = (int) ( 1 + Math.random() * 49 );
-			// to, čo sme vygenerovali, musíme porovnať s tým, čo už vygenerované bolo
-			if ( ! vygenerovaneCisla.contains(nahodneCeleCislo) ) {
-				vygenerovaneCisla.add(nahodneCeleCislo);
-			}
+			vygenerovaneCisla.add((int) ( 1 + Math.random() * 49 ));
 		}
 		System.out.println(vygenerovaneCisla);
 	}
