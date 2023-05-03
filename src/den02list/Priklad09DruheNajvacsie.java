@@ -8,9 +8,9 @@ import java.util.List;
 public class Priklad09DruheNajvacsie {
 
 	/*
-	 * Vráti prvé meno podľa abecedy.
+	 * Vráti druhé meno podľa abecedy.
 	 * Vstup: Jozef, Peter, Juraj, Gabriela, Ema, Natasa
-	 * Výstup: Ema
+	 * Výstup: Gabriela
 	 */
 	public static void main(String[] args) {
 		List<String> mena = new ArrayList<>();
