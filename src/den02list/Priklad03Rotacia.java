@@ -9,16 +9,16 @@ public class Priklad03Rotacia {
 	/*
 	 * Program vymení hodnoty v poli tak, že prvú za druhú, 
 	 * druhú za tretiu, tretiu za štvrtú atď.
-	 * Vstup: 7, 5, 6, 1
-	 * Výstup: 5, 6, 1, 7
+	 * Vstup: 1, 2, 3, 4
+	 * Výstup: 2, 3, 4, 1
 	 */
 	public static void main(String[] args) {
 		List<Integer> pole = new ArrayList<>();
 		
-		pole.add(7);
-		pole.add(5);
-		pole.add(6);
 		pole.add(1);
+		pole.add(2);
+		pole.add(3);
+		pole.add(4);
 		
 		System.out.println( "Pôvodné pole: " + pole );
 		
