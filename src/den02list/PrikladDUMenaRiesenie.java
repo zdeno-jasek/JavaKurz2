@@ -23,6 +23,15 @@ public class PrikladDUMenaRiesenie {
 		String nahodnePriezvisko = priezviska.get( (int) (Math.random() * priezviska.size() ));		// TODO
 
 		System.out.println( String.format( "Vymyslel som meno %s %s. Pekné, že?", nahodneMeno, nahodnePriezvisko));
+		
+		// 5 az 100
+		int dolnaHranica = 5;
+		int velkostIntervalu = 100 - 5;
+		
+		for (int i = 0; i < 200; i++) {
+			int nahodneCisloOd5do100 = (int) (Math.random() * velkostIntervalu + dolnaHranica);
+			System.out.print( nahodneCisloOd5do100 + ", " );
+		}
 	}
 
 }
