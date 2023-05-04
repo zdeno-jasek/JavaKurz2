@@ -27,11 +27,11 @@ public class Priklad01WriteFileRiesenie {
 		 *  Tomuto prístupu sa hovorí "try with resources".
 		 */
 		
-		try (FileWriter subor = new FileWriter("vystup.txt")) {
+		try (FileWriter subor = new FileWriter("vy\\stup.txt")) {
 			subor.write("Toto je pokus");
 			subor.write("\nKoniec súboru");
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println( "Nastala chyba: " + e.getMessage() );
 		}
 		System.out.println( "Koniec" );
 	}
