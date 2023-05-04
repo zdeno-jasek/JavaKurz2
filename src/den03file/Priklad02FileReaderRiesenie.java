@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 // ÚLOHA
-public class Priklad02FileReader {
+public class Priklad02FileReaderRiesenie {
 
 	/*
 	 * Príklad na načítanie obsahu súboru s názvom "vystup.txt".
