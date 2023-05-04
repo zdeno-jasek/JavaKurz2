@@ -18,10 +18,13 @@ public class Priklad02FileReaderRiesenie {
 				) {
 			int input = subor.read();
 			// TODO Vypisovať znaky na konzolu, kým input nie je -1
-			System.out.println( (char) input );
+			while (input != -1 ) {
+				System.out.print( (char) input );
+				input = subor.read();				
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println( "Koniec" );
+		System.out.println( "\nKoniec" );
 	}
 }

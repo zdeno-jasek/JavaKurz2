@@ -18,7 +18,11 @@ public class Priklad03BufferedReader {
 				FileReader subor = new FileReader("vystup.txt"); 
 				BufferedReader reader = new BufferedReader(subor);
 				) {
-			System.out.println( reader.readLine());
+			String celyRiadok = reader.readLine();
+			while ( celyRiadok != null ) {
+				System.out.println( celyRiadok );
+				celyRiadok = reader.readLine();				
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
