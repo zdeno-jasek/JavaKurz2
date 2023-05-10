@@ -28,6 +28,14 @@ public class Priklad02FilterRiesenie {
 				.filter( meno -> meno.length() == 5 )
 				.toList();
 
+		// Alternativa pomocou FOR
+		Collection<String> vysledok = new ArrayList<>();
+		for (String meno : mena ) {
+			if ( meno.length() == 5 ) {
+				vysledok.add( meno );
+			}
+		}
+
 		System.out.println( "Vybraný zoznam mien " + vybraneMena  );
 	}
 }
