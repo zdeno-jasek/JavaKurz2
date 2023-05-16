@@ -16,6 +16,10 @@ public class Osoba {
 		this.rodneCislo = rodneCislo;
 	}
 	
+	public void setMeno(String meno) {
+		this.meno = meno;
+	}
+	
 	@Override
 	public String toString() {
 		return meno + " " + priezvisko + ": " + rodneCislo;
