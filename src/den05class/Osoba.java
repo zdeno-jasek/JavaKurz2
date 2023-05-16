@@ -21,7 +21,7 @@ public class Osoba {
 	}
 	
 	public void setRodneCislo(String rodneCislo) {
-		if ( rodneCislo.length() >= 9 ) {
+		if ( rodneCislo.length() >= 10 ) {
 			this.rodneCislo = rodneCislo;
 		}
 	}
@@ -29,5 +29,9 @@ public class Osoba {
 	@Override
 	public String toString() {
 		return meno + " " + priezvisko + ": " + rodneCislo;
+	}
+
+	public String getMeno() {
+		return meno;
 	}
 }
