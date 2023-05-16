@@ -20,6 +20,12 @@ public class Osoba {
 		this.meno = meno;
 	}
 	
+	public void setRodneCislo(String rodneCislo) {
+		if ( rodneCislo.length() >= 9 ) {
+			this.rodneCislo = rodneCislo;
+		}
+	}
+	
 	@Override
 	public String toString() {
 		return meno + " " + priezvisko + ": " + rodneCislo;
